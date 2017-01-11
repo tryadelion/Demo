@@ -1,0 +1,100 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+#menu-top {
+  background-color: #a5c51d;
+  height: 100px;
+  width: 100%;
+  color: white;
+}
+
+span {
+  float: left;
+  clear: left;
+}
+
+.user-avatar {
+}
+
+.user-info {
+  margin-left: 10px;
+  /* flex */
+  align-self: center;
+}
+
+.user-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-subtitle {
+  font-size:  16px;
+}
+
+.menu-item {
+  margin-left: 20px;
+}
+
+.menu-subitem {
+  margin-left: 30px;
+}
+
+.menu-item-text {
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #676975;
+
+  /* flex */
+  align-self:center;
+}
+.menu-inner{
+  width:80%;
+}
+.scroll-content{
+  width: 100%;
+}
+ion-scroll{
+  width:100%;
+  height:100%;
+}
+.menu-subitem-text {
+
+  font-weight: bold;
+  font-size: 16px;
+  color: #676975;
+
+  /* flex */
+  align-self:center;
+}
+.menu-item-icon img{
+  width: 35px;
+}
+
+.menu-item-text .active {
+    color: #8ec35b;
+}
+.menu-item-text .active-blue {
+  color: #6e8ac0;
+}
+.menu-subitem-text .active{
+  color: #8ec35b;
+}
+
+.menu-subitem-text .active-blue {
+  color: #6e8ac0;
+}

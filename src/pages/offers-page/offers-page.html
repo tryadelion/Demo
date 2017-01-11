@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar center>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src="" height="30px" /></ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="ios-notifications-outline"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="ios-settings-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item id="offers-header">
+    <div id="offers-content">
+      <h1>Ofertes</h1>
+      <div id="offer-compose" (click)="createOffer()">
+        <img src="assets/images/cercarverd.png">
+      </div>
+    </div>
+  </ion-item>
+
+    <ion-grid class="offer-grid">
+      <ion-row wrap >
+        <ion-col class="offer-item" width-50 *ngFor="let item of items" (click)="goOffer(item)" >
+          <div class="offer-item-image">
+            <img *ngIf="item.image !='' " src=""/>
+            <img *ngIf="item.image =='' " src=""/>
+          </div>
+          <div class="offer-item-info">
+            <div class="offer-title">{{item.title}}</div>
+            <div class="offer-price">{{item.price}}€</div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>

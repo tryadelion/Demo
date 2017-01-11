@@ -1,0 +1,145 @@
+page-login-page {
+  #access{
+    margin-left:5px;
+    margin-right:5px;
+    color: #587faf;
+  }
+  #menu-diagonal{
+    height: 40%;
+    width:100%;
+    background-image: url("../assets/images/fonslogin.png");
+    background-size:     100% 100%;
+    background-repeat:   no-repeat;
+    background-position: 0 0;
+    //flex
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+      width: 60%;
+      height: auto;
+      margin: auto;
+    }
+  }
+  #container-login {
+    height: 100%;
+    width: 100%;
+    //flex
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #container-logo {
+    //flex
+    display: flex;
+    justify-content: center;
+    img{
+      max-height: 55px;
+      min-height: 55px;
+    }
+  }
+
+
+  #container-form-login {
+
+    padding: 10px;
+    margin-bottom: 15px;
+
+    //flex
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container-button {
+    margin-top: 60px;
+    width: 60%;
+    min-width: 60px;
+    height: 60px;
+    min-height:60px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-image: url("../assets/images/botoaccedir.png");
+    background-size:     100% 100%;
+    background-repeat:   no-repeat;
+    background-position: 0 0;
+    //flex
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    span {
+      text-transform: capitalize;
+      font-size: 1.5em;
+      text-align: center;
+      //flex
+      align-self: center;
+    }
+  }
+}
+
+.register {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #707072;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+input.holo[type='text'] {
+  /* You can set width to whatever you like */
+  width: 80%;
+  font-family: "Roboto", "Droid Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #717176;
+  padding: 8px 8px 6px 8px;
+  position: relative;
+  display: block;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background: bottom left linear-gradient(#a8cc2a, #a8cc2a) no-repeat, bottom center linear-gradient(#a8cc2a, #a8cc2a) repeat-x, bottom right linear-gradient(#a8cc2a, #a8cc2a) no-repeat;
+  background-size: 0px 6px, 2px 2px, 0px 6px;
+
+  align-self: center;
+
+}
+input.holo[type='password'] {
+  /* You can set width to whatever you like */
+  width: 80%;
+  font-family: "Roboto", "Droid Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #717176;
+  padding: 8px 8px 6px 8px;
+  position: relative;
+  display: block;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background: bottom left linear-gradient(#a8cc2a, #a8cc2a) no-repeat, bottom center linear-gradient(#a8cc2a, #a8cc2a) repeat-x, bottom right linear-gradient(#a8cc2a, #a8cc2a) no-repeat;
+  background-size: 0px 6px, 2px 2px, 0px 6px;
+
+  align-self: center;
+}
+.invalid {
+  background: bottom left linear-gradient(#f53d3d, #f53d3d) no-repeat, bottom center linear-gradient(#f53d3d, #f53d3d) repeat-x, bottom right linear-gradient(#f53d3d, #f53d3d) no-repeat !important;
+  background-size: 0px 6px, 2px 2px, 0px 6px !important;
+}
+input.holo[type='password']:hover, input.holo[type='password']:focus {
+  background: bottom left linear-gradient(#7f9b20, #7f9b20) no-repeat, bottom center linear-gradient(#7f9b20, #7f9b20) repeat-x, bottom right linear-gradient(#7f9b20, #7f9b20) no-repeat;
+  background-size: 0px 6px, 2px 2px, 0px 6px;
+}
+input.holo[type='text']:hover, input.holo[type='text']:focus {
+  background: bottom left linear-gradient(#7f9b20, #7f9b20) no-repeat, bottom center linear-gradient(#7f9b20, #7f9b20) repeat-x, bottom right linear-gradient(#7f9b20, #7f9b20) no-repeat;
+  background-size: 0px 6px, 2px 2px, 0px 6px;
+}
+
+input.holo.top-40 {
+  margin-top: 20px;
+}

@@ -1,0 +1,30 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+
+
+<ion-content>
+  <div id="menu-diagonal">
+    <img src="" />
+  </div>
+  <form id="container-form-login" [formGroup]="loginForm">
+    <ion-input class="username" formControlName="login" type="text" placeholder="Usuari" value="" class="holo" [class.invalid]="loginError"></ion-input>
+    <ion-input formControlName="password" type="password" placeholder="Contrasenya" value="" class="holo top-40" [class.invalid]="passwordError"></ion-input>
+  </form>
+  <div class="form-bottom">
+    <div class="container-button" (click)="doSubmit()">
+      <span>ACCEDIR</span>
+    </div>
+    <span class="register" >o<a id="access" (click)="goRegister()">enregistra't</a> per gaudir-ne</span>
+    <div id="container-logo">
+      <img src="">
+    </div>
+  </div>
+
+</ion-content>

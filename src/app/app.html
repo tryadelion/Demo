@@ -1,0 +1,140 @@
+<ion-menu type="push" [content]="content" id="menu1">
+
+
+    <ion-scroll scrollY="true">
+      <div id="menu-top">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-10></ion-col>
+          <ion-col width-30 class="user-avatar">
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/rounded-avatars/154/lady-female-hair-style-avatar-round-128.png">
+          </ion-col>
+          <ion-col width-50 class="user-info">
+            <span class="user-title">Joan Piulats</span>
+            <span class="user-subtitle">Lleida, Espanya</span>
+          </ion-col>
+          <ion-col width-10></ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+  <div id="menu-diagonal">
+    <img src="assets/images/menudiagonal.png"/>
+  </div>
+  <div id="menu-items">
+    <ion-grid>
+      <!-- ofertas -->
+      <ion-row class="menu-item" (click)="openPage(pages[0])">
+        <ion-col class="menu-item-icon" width-20>
+          <img
+            src="assets/images/ofertes.png">
+        </ion-col>
+        <ion-col width-80 class="menu-item-text">
+          <span [ngClass]="{'active': isOfferTab}">Ofertes</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- totes -->
+      <ion-row class="menu-subitem" (click)="openPage(pages[0])">
+        <ion-col class="menu-item-icon" width-20>
+          <img src="assets/images/totes.png">
+        </ion-col>
+        <ion-col width-80 class="menu-subitem-text">
+          <span [ngClass]="{'active': isOfferPage}">Totes</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- meves -->
+      <ion-row class="menu-subitem" (click)="openPage(pages[1])">
+        <ion-col class="menu-item-icon" width-20>
+          <img src="assets/images/offersmine.png">
+        </ion-col>
+        <ion-col width-80 class="menu-subitem-text">
+          <span [ngClass]="{'active': isMineOfferPage}">Meves</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- preferides -->
+      <ion-row class="menu-subitem" (click)="openPage(pages[2])">
+        <ion-col class="menu-item-icon" width-20>
+          <img src="assets/images/corgris.png">
+        </ion-col>
+        <ion-col width-80 class="menu-subitem-text">
+          <span [ngClass]="{'active': isFavOfferPage}">Preferides</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- Demandes -->
+      <ion-row class="menu-item" (click)="openPage(pages[3])">
+        <ion-col class="menu-item-icon" width-20>
+          <img
+            src="assets/images/demandes.png">
+        </ion-col>
+        <ion-col width-80 class="menu-item-text">
+          <span [ngClass]="{'active-blue': isDemandTab}">Demandes</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- totes -->
+      <ion-row class="menu-subitem" (click)="openPage(pages[3])">
+        <ion-col class="menu-item-icon" width-20>
+          <img src="assets/images/totes.png">
+        </ion-col>
+        <ion-col width-80 class="menu-subitem-text">
+          <span [ngClass]="{'active-blue': isDemandPage}">Totes</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- meves -->
+      <ion-row class="menu-subitem"  (click)="openPage(pages[4])">
+        <ion-col class="menu-item-icon" width-20>
+          <img src="assets/images/offersmine.png">
+        </ion-col>
+        <ion-col width-80 class="menu-subitem-text">
+          <span [ngClass]="{'active-blue': isMineDemandPage}">Meves</span>
+        </ion-col>
+      </ion-row>
+      <!-- preferides -->
+      <ion-row class="menu-subitem" (click)="openPage(pages[5])">
+        <ion-col class="menu-item-icon" width-20>
+          <img src="assets/images/corgris.png">
+        </ion-col>
+        <ion-col width-80 class="menu-subitem-text">
+          <span [ngClass]="{'active-blue': isFavDemPage}">Preferides</span>
+        </ion-col>
+      </ion-row>
+      <!-- Bústia -->
+      <ion-row class="menu-item" (click)="openPage(pages[6])">
+        <ion-col class="menu-item-icon" width-20>
+          <img
+            src="assets/images/bustia.png">
+        </ion-col>
+        <ion-col width-80 class="menu-item-text">
+          <span [ngClass]="{'active': isEmailPage}">Bústia</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- Sobre l'eina -->
+      <ion-row class="menu-item"  (click)="about()">
+        <ion-col class="menu-item-icon" width-20>
+          <img
+            src="assets/images/sobreina.png">
+        </ion-col>
+        <ion-col width-80 class="menu-item-text">
+          <span>Sobre l'eina</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+    </ion-scroll>
+
+
+
+</ion-menu>
+
+<ion-menu type="push" [content]="content" id="menu2">
+  menu 2
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
